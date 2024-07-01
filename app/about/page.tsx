@@ -2,14 +2,14 @@ import { FaLinkedin } from 'react-icons/fa';
 
 export default function About() {
 	return (
-		<div className="grid grid-cols-2 justify-items-center align-middle max-md:flex max-md:h-[95lvh] max-md:flex-col max-md:overflow-scroll">
+		<div className="grid grid-cols-2 justify-items-center align-middle max-md:flex max-md:h-[90lvh] max-md:flex-col max-md:overflow-scroll">
 			<img
 				src="/About_img.jpg"
-				className="col-start-2 row-start-1 row-end-1 m-4 translate-y-4 rotate-[4deg] object-cover p-4 shadow-xl max-md:mb-10 max-md:mt-0 max-md:w-[85%] max-md:self-center max-md:p-3 md:w-[70%] lg:w-[75%]"
+				className="p-4r col-start-2 row-start-1 row-end-1 m-4 translate-y-4 rotate-[4deg] border-[16px] bg-clip-border object-cover max-md:mb-10 max-md:mt-0 max-md:w-[85%] max-md:self-center max-md:p-3 md:w-[70%] lg:w-[75%]"
 			/>
-			<div className="col-start-1 row-start-1">
+			<div className="text-custom_text-950 col-start-1 row-start-1">
 				<i className="m-4 p-4 text-lg"></i>
-				<p className="max-md:text-md max-lg:text-sm max-md:p-2 md:w-[50svw] md:pl-12 xl:text-base">
+				<p className="max-md:text-md max-md:p-2 md:w-[50svw] md:pl-12 lg:text-[0.9rem] xl:text-base">
 					<i>Yes, I know what memes to make and which ones to send so you don't have to cringe. </i>
 					<br />
 					<br />
@@ -36,7 +36,7 @@ export default function About() {
 					Have a wonderful day! <br />
 					<br />
 					<a
-						className="flex place-items-center justify-center rounded-xl border-4 bg-[#0a66c2] p-3 indent-3 text-3xl text-white transition-all duration-500 hover:bg-white hover:text-[#0a66c2] max-md:p-1 max-md:text-lg"
+						className="flex place-items-center justify-center rounded-xl bg-[#0a66c2] p-3 indent-3 text-3xl text-white shadow-md transition-all duration-500 hover:bg-white hover:text-[#0a66c2] hover:shadow-[#0a66c2] max-md:p-1 max-md:text-lg"
 						href="https://www.linkedin.com/in/karelin-aleksey/">
 						<FaLinkedin /> LinkedIn
 					</a>

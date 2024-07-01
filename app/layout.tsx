@@ -23,7 +23,7 @@ export default function RootLayout({
 				<body className={inter.className}>
 					<div className="flex flex-row">
 						<AsideBar></AsideBar>
-						<div>
+						<div className="from-background-200 to-background-100 bg-gradient-to-b">
 							<NavBar></NavBar>
 							{children}
 						</div>
