@@ -15,7 +15,7 @@ export default function AsideBar() {
 	const pathname = usePathname();
 
 	return (
-		<aside className="h-screen m-0 p-0 flex flex-col w-24 shadow-2xl bg-gradient-to-b from-background-900 to-background-500">
+		<aside className="from-background-900 to-background-500 m-0 flex h-screen w-24 flex-col bg-gradient-to-b p-0 shadow-2xl">
 			{links.map((link) => {
 				const LinkIcon = link.icon;
 				return (
@@ -23,21 +23,18 @@ export default function AsideBar() {
 						key={link.name}
 						href={link.href}
 						className={clsx(
-							'flex flex-col lg:w-20 lg:h-20 max-md:w-16 max-md:h-16 p-4 m-2 shadow-md hover:rounded-3xl transition-all duration-300 justify-center items-center active:scale-75',
+							'm-2 flex flex-col items-center justify-center p-4 shadow-md transition-all duration-300 hover:rounded-3xl active:scale-75 max-md:h-16 max-md:w-16 lg:h-20 lg:w-20',
 							{
-								'rounded-3xl bg-primary-400 shadow-primary-400':
-									pathname === link.href,
-								'rounded-md bg-secondary-100':
-									pathname !== link.href,
+								'bg-primary-400 shadow-primary-400 rounded-3xl': pathname === link.href,
+								'bg-secondary-100 rounded-md': pathname !== link.href,
 							}
 						)}>
 						<LinkIcon
 							className={clsx(
-								'bg-transparent w-24 h-24 text-primary-400 transition-colors ease-linear',
+								'text-primary-400 h-24 w-24 bg-transparent transition-colors ease-linear md:h-12',
 								{
 									'text-secondary-50': pathname === link.href,
-									'hover:text-secondary-600':
-										pathname !== link.href,
+									'hover:text-secondary-600': pathname !== link.href,
 								}
 							)}
 						/>

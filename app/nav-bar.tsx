@@ -11,10 +11,8 @@ export default function NavBar() {
 	header_map.set('/projects', 'Projects');
 
 	return (
-		<nav className="mb-2 flex shadow-primary-200 justify-start shadow-2xl bg-gradient-to-r from-background-800 via-background-900 to-background-950 drop-shadow-2xl">
-			<p className="pl-10 max-md:text-3xl text-6xl font-bold text-primary-200">
-				{header_map.get(pathname)}
-			</p>
+		<nav className="shadow-primary-200 from-background-800 via-background-900 to-background-950 mb-2 flex justify-start bg-gradient-to-r shadow-2xl drop-shadow-2xl">
+			<p className="text-primary-200 pl-10 text-6xl font-bold max-md:text-3xl">{header_map.get(pathname)}</p>
 		</nav>
 	);
 }
