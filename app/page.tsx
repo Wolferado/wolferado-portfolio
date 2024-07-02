@@ -6,7 +6,6 @@ import { useState } from 'react';
 export default function Home() {
 	const professions = ['guy', 'programmer', '3D modeller', 'video editor', 'photo editor'];
 	const [professionID, setProfessionID] = useState(0);
-	const professionElement = document.getElementsByTagName('b')[0];
 
 	setTimeout(() => {
 		if (professionID === professions.length - 1) setProfessionID(0);
