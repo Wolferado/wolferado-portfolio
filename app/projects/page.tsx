@@ -24,7 +24,7 @@ export default function Projects() {
 	};
 
 	const tags = projectsData[videoID].tags.map((tag) => (
-		<span className="bg-primary-300 m-1 flex place-items-center rounded-lg border-text p-3 text-center align-middle shadow-md max-md:m-0.5 max-md:p-1 max-md:text-xs">
+		<span key={tag + "_tag"} className="bg-primary-300 m-1 flex place-items-center rounded-lg border-text p-3 text-center align-middle shadow-md max-md:m-0.5 max-md:p-1 max-md:text-xs">
 			{tag}
 		</span>
 	));
