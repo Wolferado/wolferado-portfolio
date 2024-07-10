@@ -13,7 +13,7 @@ export default function Home() {
 	}, 1500);
 
 	return (
-		<div className="text-text-50 text-custom_text-950 flex h-80 flex-col items-center">
+		<div className="text-text-50 flex h-80 flex-col items-center text-custom_text-950">
 			<h1 className="m-6 text-center text-6xl font-bold max-md:text-3xl">Aleksey Karelin</h1>
 			<img
 				className="xs:w-[50%] max-xs:m-6 m-10 w-[20%] rounded-[50%] border-4 border-white max-lg:w-[40%] max-md:w-[50%]"
@@ -21,7 +21,7 @@ export default function Home() {
 			/>
 			<p className="m-4 mb-10 text-center text-3xl max-md:text-xl">
 				Local meme dealer and hard working <br />
-				<b>{professions[professionID]}</b>.
+				<b className="text-purple-300">{professions[professionID]}</b>.
 			</p>
 			<span className="flex flex-row max-lg:flex-col">
 				<a
