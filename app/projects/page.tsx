@@ -60,9 +60,9 @@ export default function Projects() {
 		);
 
 	return (
-		<div className="grid h-[92lvh] grid-cols-2 grid-rows-4 items-center text-custom_text-950 max-lg:flex max-lg:h-[94lvh] max-lg:flex-col max-lg:overflow-y-scroll max-md:justify-normal max-md:p-3 xl:p-0 xl:text-xl">
+		<div className="grid h-[92lvh] w-auto grid-cols-2 grid-rows-4 items-center text-custom_text-950 max-lg:flex max-lg:h-[94lvh] max-lg:flex-col max-lg:overflow-y-scroll max-md:justify-normal max-md:p-3 xl:p-0 xl:text-xl">
 			<video
-				className="row-span-2 row-start-1 scale-90 rounded-xl border-[4px] border-primary-400 shadow-md max-md:m-1 max-md:scale-100"
+				className="object-fit row-span-2 row-start-1 w-[90svw] scale-90 rounded-xl border-[4px] border-primary-400 shadow-md max-md:m-1 max-md:scale-100"
 				key={projectsData[videoID].video_url}
 				autoPlay
 				controls
