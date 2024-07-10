@@ -9,6 +9,9 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			animation: {
+				'spin-slow': 'spin 10s linear infinite',
+			},
 			colors: {
 				...colors,
 				custom_text: {

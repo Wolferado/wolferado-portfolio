@@ -31,13 +31,10 @@ export default function AsideBar() {
 							}
 						)}>
 						<LinkIcon
-							className={clsx(
-								'h-24 w-24 bg-transparent text-primary-900 transition-colors ease-linear md:h-12',
-								{
-									'text-primary-200 group-hover:text-primary-400': pathname === link.href,
-									'group-hover:text-primary-200': pathname !== link.href,
-								}
-							)}
+							className={clsx('h-24 w-24 bg-transparent transition-colors ease-linear md:h-12', {
+								'text-primary-200 group-hover:text-primary-400': pathname === link.href,
+								'text-primary-900 group-hover:text-primary-200': pathname !== link.href,
+							})}
 						/>
 					</Link>
 				);
